@@ -1,10 +1,11 @@
 <?php
-$servername = "localhost";
+$servername = "172.19.0.2";
 $username = "root";
-$password = "";
+$password = "example";
+$dbNAme = "module";
 
 try {
-  $db = new PDO("mysql:host=$servername;dbname=module", $username, $password,[
+  $db = new PDO("mysql:host=$servername;dbname=", $username, $password,[
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
     ]);
 } catch(PDOException $e) {
